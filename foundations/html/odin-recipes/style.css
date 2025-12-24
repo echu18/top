@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(248, 235, 238);
+}
+
 .recipe-container,
 footer {
   width: 50%;
