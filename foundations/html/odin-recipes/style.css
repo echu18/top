@@ -1,0 +1,29 @@
+.recipe-container,
+footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+}
+
+.recipe-list {
+  padding: 0;
+  list-style: none;
+}
+
+.recipe-list li {
+  margin: 16px;
+  text-decoration: none;
+}
+
+.recipe-list li a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 200px;
+}
