@@ -9,6 +9,9 @@ let humanScoreMessage = document.getElementById('human-score').firstElementChild
 let computerScoreMessage = document.getElementById('computer-score').firstElementChild;
 let roundLabel = document.getElementById('round-container').firstElementChild.firstElementChild;
 
+let actionBtns = document.querySelectorAll('.btn-action');
+let newGameBtn = document.querySelector('.btn-new-game');
+
 function getComputerChoice() {
   let randomNum = Math.floor(Math.random() * 100);
   if (randomNum < 34) {
@@ -48,27 +51,63 @@ function playRound(humanChoice) {
 
   if (humanScore == 5) {
     text = `You win! You - ${humanScore}, Computer - ${computerScore}`;
+    toggleBtns();
   } else if (computerScore == 5) {
     text = `You lose! You - ${humanScore}, Computer - ${computerScore}`;
+    toggleBtns();
   }
 
   message.textContent = text;
-  
+
   // message.textContent = `Round ${round} score: You - ${humanScore}, Computer - ${computerScore}`;
 }
 
+function resetGame() {
+  round = 1;
+  humanScore = 0;
+  computerScore = 0;
+  roundLabel.textContent = round;
+  humanScoreMessage.textContent = humanScore;
+  computerScoreMessage.textContent = computerScore;
+  message.textContent = ''
+}
 
+
+function toggleActionBtns() {
+  actionBtns.forEach(btn => {
+    btn.classList.toggle('show');
+    btn.classList.toggle('hide');
+  })
+}
+
+function toggleNewGameBtn() {
+  newGameBtn.classList.toggle('show');
+  newGameBtn.classList.toggle('hide');
+}
+
+function toggleBtns() {
+  toggleActionBtns();
+  toggleNewGameBtn();
+}
 
 let btns = Array.from(document.getElementById('btn-container').children);
 let btnRock = document.getElementById('rock');
 let btnPaper = document.getElementById('paper');
 let btnScissors = document.getElementById('scissors');
 
+
+// Event listeners
 btns.forEach(btn => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     playRound(e.target.value)
   })
+})
+
+newGameBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  toggleBtns();
+  resetGame();
 })
 
 
