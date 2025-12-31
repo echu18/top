@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  /* background: rgb(0, 0, 0); */
 }
 
 
@@ -39,4 +40,32 @@ body {
 .white {
   background-color: white;
   opacity: 1;
+}
+
+.palette-container {
+  display: flex;
+  height: 100px;
+  width: min-content;
+}
+
+.swatch {
+  height: 100px;
+  width: 100px;
+}
+
+
+.blush {
+  background-color: #FFE6E6;
+}
+
+.pink {
+  background-color: #E1AFD1;
+}
+
+.purple {
+  background-color: #AD88C6;
+}
+
+.twilight {
+  background-color: #7469B6;
 }

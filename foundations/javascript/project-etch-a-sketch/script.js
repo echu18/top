@@ -2,11 +2,30 @@
 //== Page Elements ==//
 let gridContainer = document.getElementById('grid-container');
 
+let swatches = document.querySelectorAll('.swatch');
+
+let currentFunction = 'draw';
+let currentColor = 'blush';
+
+
+// Set bg color for swatches dynamically
+// swatches.forEach(swatch => swatch.style.backgroundColor = swatch.dataset.hex)
+// Set swatch click to change draw color
+swatches.forEach(function(swatch) {
+  swatch.addEventListener('click', function(e){
+    let color = Array.from(e.target.classList).filter(className => className !== 'swatch');
+    currentColor = color;
+    
+  })
+})
+
+// TODO - current swatch colors are too light for a white background, either use darker colors or make page bg dark
+// TODO - drawing over previous color with new color doesn't reset opacity back to 0.1, need to add logic for that
+
+
 // Buttons
 let drawBtn = document.getElementById('btn-draw');
 let eraseBtn = document.getElementById('btn-erase');
-
-let currentFunction = 'draw'
 
 
 
@@ -43,9 +62,6 @@ function createSketchContainer(){
         e.preventDefault();
 
         if (currentFunction == 'draw') {
-          // if (e.target.classList.contains("white")) {
-          //   e.target.classList.remove("white");
-          // }
 
           let currentOpacity = parseFloat(e.target.style.opacity);
 
@@ -55,13 +71,12 @@ function createSketchContainer(){
           } else {
             e.target.style.opacity = currentOpacity += 0.1;
           }
-          e.target.classList.add('blue');
+          e.target.classList.add(currentColor);
 
         } else if (currentFunction == 'erase') {
-          if (e.target.classList.contains('blue')) {
-            e.target.classList.remove('blue')
+          if (e.target.classList.contains(currentColor)) {
+            e.target.classList.remove(currentColor)
           }
-          // e.target.classList.add('white');
           e.target.style.opacity = 0.1
         }
       })
