@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+}
+
+
+#grid-container {
+  border: 1px solid black;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  height: 960px;
+  width: 960px;
+}
+
+#grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.square {
+  /* border: 1px solid pink; */
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+  opacity: 1;
+}
