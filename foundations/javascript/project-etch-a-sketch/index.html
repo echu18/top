@@ -13,8 +13,11 @@
     <h1>Etch-A-Sketch</h1>
 
     <div class="grid-size-container">
-      <h2>Grid Size</h2>
-
+      <h2>Grid Size: </h2>
+      <button class="btn btn-grid-size selected-grid-size" data-grid-size="4">4 x 4</button>
+      <button class="btn btn-grid-size" data-grid-size="8">8 x 8</button>
+      <button class="btn btn-grid-size" data-grid-size="16">16 x 16</button>
+      <button class="btn btn-grid-size" data-grid-size="32">32 x 32</button>
     </div>
 
     <div class="palette-container">
@@ -24,8 +27,9 @@
       <div class="swatch twilight" data-hex="#7469B6"></div>
     </div>
     <div class="btn-container">
-      <button id="btn-draw" class="btn">Draw</button>
+      <button id="btn-draw" class="btn selected-btn">Draw</button>
       <button id="btn-erase" class="btn">Erase</button>
+      <button id="btn-overwrite" class="btn">Overwrite: <span></span></button>
     </div>
     <div id="grid-container"></div>
   
