@@ -1,0 +1,33 @@
+#calculator {
+  border: 1px solid black;
+
+  height: auto;
+  width: 300px;
+}
+
+.calc-display {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .numpad {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.btn-pad {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.operator-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  height: 30px;
+  width: 60px;
+}
