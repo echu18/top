@@ -64,7 +64,7 @@ document.querySelector('.operator-btns').addEventListener('click', function(e) {
         currentNumberString = "";
         updateDisplay();
       }
-      if (finalResult) {
+      if (finalResult !== null) {
         finalResult = null;
       }
       updateDisplay();
@@ -166,13 +166,7 @@ function calculateData(){
   
 }
 
-// function operate(){
-//   if (prevNumberString == '') {
-//     prevNumberString = currentNumberString
-//   }
 
-//   if (currentOperation == 'equals' && prevNumberString == '') {
-//     result = currentNumberString
-//     return
-//   }
-// }
+// TODO:
+// - Wrap state in object
+// - Refactor out helpers from switch
