@@ -1,0 +1,70 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "Norse";
+  src: 
+    url("fonts/Norse.woff") format("woff"),
+    url("fonts/Norse.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Norse-bold";
+  src:
+    url("fonts/Norse-Bold.woff") format("woff"),
+    url("fonts/Norse-Bold.woff2") format("woff2");
+}
+
+
+.main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr;
+}
+
+.left-panel {
+  background-image: url("assets/background.jpg");
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.logo-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.300);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  grid-row: 1;
+  align-self: end;
+
+  img {
+    height: 120px;
+    width: auto;
+    margin: 12px 24px;
+  }
+
+  h1 {
+    font-family: "Norse-Bold";
+    color: white;
+    font-size: 5rem;
+  }
+
+}
+.photo-credit {
+  grid-row: 3;
+  align-self: end;
+  justify-self: center;
+  margin: 24px;
+  p, a {
+    color: white;
+  }
+}
+
+
+.right-panel {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.right-panel div:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+}
