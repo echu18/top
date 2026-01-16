@@ -6,19 +6,18 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
   height: 100vh;
 }
 
 
 .left-sidebar {
-  background-color: rgb(87, 178, 242);
+  background-color:#1992D4;
   color: white;
   display: flex;
   flex-direction: column;
   row-gap: 56px;
-  /* display: grid;
-  grid-template-rows: 100px 1fr 1fr; */
   padding: 24px;
 
   li {
@@ -52,4 +51,81 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+}
+
+/* .content {
+  
+} */
+
+.nav {
+  border: 1px solid blue;
+}
+
+.nav-upper {
+  display: grid;
+  grid-template-columns: 70% auto auto auto;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 200px auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  
+  padding: 24px;
+  column-gap: 24px;
+  background-color: #E2E8F0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  height: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: white;
+  border: 1px solid;
+  row-gap: 12px;
+    
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+
+  }
+}
+
+.right-sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.project-icons {
+  align-self: flex-end;
 }
