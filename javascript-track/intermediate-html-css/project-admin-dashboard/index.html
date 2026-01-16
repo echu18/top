@@ -4,39 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
+    <div class="left-sidebar">
       <div class="logo">
-        <img src="" alt="">
+        <img class="icon" src="images/view-dashboard.svg" alt="">
         <h1>Dashboard</h1>
       </div>
 
       <div class="sidebar-content">
         <ul>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/home.svg" alt="">
             Home
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/card-account-details-outline.svg" alt="">
             Profile
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/message-reply.svg" alt="">
             Messages
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/clock-time-four.svg" alt="">
             History
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/note-multiple.svg" alt="">
             Tasks
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/account-group.svg" alt="">
             Communities
           </li>
         </ul>
@@ -44,21 +51,21 @@
       <div class="sidebar-settings">
         <ul>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/cog.svg" alt="">
             Settings
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/help-box.svg" alt="">
             Support
           </li>
           <li>
-            <img src="" alt="">
+            <img class="icon" src="images/shield-check.svg" alt="">
             Privacy
           </li>
         </ul>
       </div>
     </div>
-    <div class="main">
+    <div class="content">
       <div class="nav">
         <div class="nav-upper">
           <div class="searchbar">
@@ -84,6 +91,121 @@
             <button>Share</button>
           </div>
         </div>
+      </div>
+
+      <div class="main">
+        <div class="projects">
+          <h3>Your Projects</h3>
+          <div class="project">
+            <h4>Super Cool Project</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="project">
+            <h4>Less Cool Project</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="project">
+            <h4>Impossible App</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="project">
+            <h4>Easy Peasy App</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="project">
+            <h4>Ad Blocker</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="project">
+            <h4>Money Maker</h4>
+            <p>Lorem ipsum dolor sit amet. Ut consequuntur similique qui consequatur facilis sed corporis omnis et repellat odit et quia autem aut laborum accusantium ut voluptatem consequatur?</p>
+            <div class="project-icons">
+              <img class="icon" src="images/star-plus-outline.svg" alt="">
+              <img class="icon" src="images/eye-plus-outline.svg" alt="">
+              <img class="icon" src="images/share-variant-outline.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="right-sidebar">
+          <div class="announcements-container">
+            <h3>Announcements</h3>
+            <div class="announcements-content">
+              <div class="announcement-item">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet. Nam labore velit ea perspiciatis pariatur et perferendis dicta in voluptatem voluptatum.</p>
+              </div>
+
+              <hr>
+
+              <div class="announcement-item">
+                <h4>Community Share Day</h4>
+                <p>Vel excepturi deleniti quo rerum officia et distinctio eaque.</p>
+              </div>
+
+              <hr>
+              
+              <div class="announcement-item">
+                <h4>Updated Privacy Policy</h4>
+                <p>Aut dolorum commodi aut facere iste sed eius similique ut unde blanditiis qui dolores labore.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending-container">
+            <p>Trending</p>
+            <div class="trending-content">
+              <div class="trending-item">
+                <img src="" alt="">
+                <p>@tegan</p>
+                <p>World Peace Builder</p>
+              </div>
+              <div class="trending-item">
+                <img src="" alt="">
+                <p>@morgan</p>
+                <p>Super Cool Project</p>
+              </div>
+              <div class="trending-item">
+                <img src="" alt="">
+                <p>@kendall</p>
+                <p>Life Changing App</p>
+              </div>
+              <div class="trending-item">
+                <img src="" alt="">
+                <p>@alex</p>
+                <p>No Traffic Maker</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
