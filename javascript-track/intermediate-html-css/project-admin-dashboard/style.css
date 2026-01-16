@@ -120,12 +120,14 @@ body {
   }
 }
 
+.project-icons {
+  align-self: flex-end;
+}
+
 .right-sidebar {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 16px;
 }
 
-.project-icons {
-  align-self: flex-end;
-}
+
