@@ -1,0 +1,42 @@
+
+
+#bookshelf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 8px solid rgb(121, 30, 30);
+  padding: 16px;
+  gap: 8px;
+}
+
+.book {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 300px;
+  border: 1px solid;
+  padding: 16px;
+}
+
+.readStatus {
+  text-transform: capitalize;
+}
+
+.book[data-read="true"] {
+  background-color: #2e7d324f;
+}
+
+.book[data-read="false"] {
+  background-color: #b71c1c3a;
+}
+
+.book button:first-of-type {
+  margin: 8px 0;
+}
+
+button {
+  border: none;
+  padding: 8px 4px;
+  border-radius: 16px;
+  background-color: white;
+  text-transform: capitalize;
+}
